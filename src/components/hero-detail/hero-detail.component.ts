@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../../services/hero/hero.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { Hero } from '../../types/hero.type';
 import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-hero-detail',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   templateUrl: './hero-detail.component.html',
   styleUrl: './hero-detail.component.css',
 })

@@ -1,5 +1,5 @@
 export type Hero = {
-  name: string;
+  heroName: string;
   superHeroName: string;
   superPower: string;
   id: string;
